@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zupin Bot • Vendas no Discord</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00ff66;
+      --dark: #0d0d0d;
+      --gray: #1a1a1a;
+      --text: #fff;
+      --muted: #aaa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--dark);
+      color: var(--text);
+    }
+
+    header {
+  background: #0b0b0b;
+  padding: 12px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px #000;
+}
+
+header .logo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+header .btn {
+  background: var(--primary);
+  color: #000;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+header .btn:hover {
+  transform: scale(1.05);
+}
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(145deg, #101010, #1f1f1f);
+    }
+
+    .hero img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    .hero .btns a {
+      margin: 10px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      background: var(--primary);
+      color: #000;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+
+    .hero .btns a:hover {
+      transform: scale(1.05);
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--primary);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--gray);
+      padding: 25px;
+      border-radius: 10px;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card i {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #0a0a0a;
+      padding: 30px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <i class="fas fa-robot"></i> Zupin Bot
+    </div>
+    <a href="#" class="btn">Adicionar ao Discord</a>
+  </header>
+
+  <section class="hero">
+   <!-- <img src="loge.png" alt="Logo Zupin"> -->
+    <h1>Automatize Suas Vendas no Discord</h1>
+    <p>Venda com segurança, velocidade e estilo. O Zupin é o bot ideal para sua loja digital.</p>
+    <div class="btns">
+      <a href="https://discord.com/oauth2/authorize?client_id=1389341579520643173&permissions=0&integration_type=0&scope=bot+applications.commands">Adicionar ao Discord</a>
+      <a href="https://discord.gg/BcFu6Vyzzj">Entrar no Suporte</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Funcionalidades Principais</h2>
+    <div class="features">
+      <div class="card">
+        <i class="fas fa-check-circle"></i>
+        <h3>Entrega Automática</h3>
+        <p>Produtos são enviados automaticamente após a confirmação de pagamento.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-credit-card"></i>
+        <h3>Pix / Mercado Pago</h3>
+        <p>Receba com segurança via Pix, Mercado Pago e outros meios integrados.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-ticket-alt"></i>
+        <h3>Cupons e Sorteios</h3>
+        <p>Crie promoções, cupons de desconto e sorteios automáticos.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Segurança Avançada</h3>
+        <p>Detecção antifraude, bloqueio de golpes e sistema confiável.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-store"></i>
+        <h3>Loja Personalizada</h3>
+        <p>Crie sua loja com nome, avatar e link único no Discord.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Estatísticas em Tempo Real</h3>
+        <p>Acompanhe suas vendas com gráficos e logs detalhados.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Zupin Bot.
+  </footer>
+
+</body>
+</html>
